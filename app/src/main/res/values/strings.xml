@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">CustomBottomNavigation</string>
+    <string name="nav_1">Пункт 1</string>
+    <string name="nav_2">Пункт 2</string>
+    <string name="nav_3">Пункт 3</string>
+    <string name="nav_4">Пункт 4</string>
+</resources>

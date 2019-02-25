@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#8E8E93"/>
+        <ImageView
+            android:layout_marginTop="7dp"
+            android:id="@+id/imRadio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/radio_selector"
+            app:layout_constraintBottom_toTopOf="@id/radio"
+            app:layout_constraintStart_toStartOf="@id/radio"
+            app:layout_constraintEnd_toEndOf="@id/radio"
+            />
+
+        <TextView
+            android:layout_marginTop="9dp"
+            android:layout_marginStart="20dp"
+            app:layout_constraintTop_toBottomOf="@id/imRadio"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/program"
+            android:id="@+id/radio"
+            android:text="@string/nav_1"
+            android:textColor="@color/bottom_menu_colors"
+            android:gravity="center_horizontal"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            android:layout_width="0dp"
+            app:layout_constraintHorizontal_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            />
+
+
+        <ImageView
+            android:layout_marginTop="7dp"
+            android:id="@+id/imProgram"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/program_selector"
+            app:layout_constraintBottom_toTopOf="@id/program"
+            app:layout_constraintStart_toStartOf="@id/program"
+            app:layout_constraintEnd_toEndOf="@id/program"
+            />
+
+        <TextView
+            android:layout_marginTop="9dp"
+            app:layout_constraintTop_toBottomOf="@id/imRadio"
+            app:layout_constraintStart_toEndOf="@id/radio"
+            app:layout_constraintEnd_toStartOf="@id/news"
+            android:id="@+id/program"
+            android:text="@string/nav_2"
+            android:textColor="@color/bottom_menu_colors"
+            android:layout_width="0dp"
+            android:gravity="center_horizontal"
+            app:layout_constraintHorizontal_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            />
+
+
+        <ImageView
+            android:layout_marginTop="7dp"
+            android:id="@+id/imNews"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/news_selector"
+            app:layout_constraintBottom_toTopOf="@id/news"
+            app:layout_constraintStart_toStartOf="@id/news"
+            app:layout_constraintEnd_toEndOf="@id/news"
+            />
+
+        <TextView
+            android:layout_marginTop="9dp"
+            app:layout_constraintTop_toBottomOf="@id/imRadio"
+            app:layout_constraintStart_toEndOf="@id/program"
+            app:layout_constraintEnd_toEndOf="@id/competition"
+            android:id="@+id/news"
+            android:text="@string/nav_3"
+            android:textColor="@color/bottom_menu_colors"
+            android:gravity="center_horizontal"
+            android:layout_width="0dp"
+            app:layout_constraintHorizontal_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            />
+
+        <ImageView
+            android:layout_marginTop="7dp"
+            android:id="@+id/imCompetition"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/star_selector"
+            app:layout_constraintBottom_toTopOf="@id/competition"
+            app:layout_constraintStart_toStartOf="@id/competition"
+            app:layout_constraintEnd_toEndOf="@id/competition"
+            />
+
+        <TextView
+            android:layout_marginTop="9dp"
+            android:layout_marginEnd="20dp"
+            app:layout_constraintTop_toBottomOf="@id/imCompetition"
+            app:layout_constraintStart_toEndOf="@id/news"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:id="@+id/competition"
+            android:text="@string/nav_4"
+            android:layout_width="0dp"
+            android:gravity="center_horizontal"
+            app:layout_constraintHorizontal_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:textColor="#811B6A"
+            app:layout_constraintBottom_toBottomOf="parent"
+            />
+
+        <View
+            android:id="@+id/navRadio"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@id/radio"
+            app:layout_constraintEnd_toEndOf="@id/radio"
+            android:layout_width="0dp"
+            android:layout_height="0dp" />
+
+        <View
+            android:id="@+id/navProgram"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@id/program"
+            app:layout_constraintEnd_toEndOf="@id/program"
+            android:layout_width="0dp"
+            android:layout_height="0dp" />
+
+        <View
+            android:id="@+id/navNews"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@id/news"
+            app:layout_constraintEnd_toEndOf="@id/news"
+            android:layout_width="0dp"
+            android:layout_height="0dp" />
+
+        <View
+            android:id="@+id/navCompetition"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@id/competition"
+            app:layout_constraintEnd_toEndOf="@id/competition"
+            android:layout_width="0dp"
+            android:layout_height="0dp" />
+
+    </android.support.constraint.ConstraintLayout>
+</merge>
